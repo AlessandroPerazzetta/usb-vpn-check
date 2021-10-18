@@ -92,11 +92,7 @@ ping_ip_check(){
 	ping -c 1 $IP &> /dev/null
 	if [[ $? -ne 0 ]]; then
 		echo "ERROR "$NOW
-		if [ ! -d $SCRIPTPATH/logs/ ]; then
-			mkdir -p $SCRIPTPATH/logs/
-		fi
 		echo "[$NOW] ERROR" >> $SCRIPTPATH/logs/$(date '+%Y%m%d').log
-
 		false
 	else
 		echo "OK "$NOW
@@ -118,6 +114,10 @@ search_usb_key(){
 		return
 	fi
 }
+
+if [ ! -d $SCRIPTPATH/logs/ ]; then
+	mkdir -p $SCRIPTPATH/logs/
+fi
 
 if ping_ip_check; then
 	echo "Ping check status: true"
