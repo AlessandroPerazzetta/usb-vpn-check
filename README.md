@@ -18,6 +18,7 @@ Script and usbreset binary must be executed as privileged user to allow system c
 Compile usbreset and make it executable:
 
 `cc usbreset.c -o usbreset`
+
 `chmod +x usbreset`
 
 USB reset issued with Bus Device Path (found with lsusb) as parameter:
