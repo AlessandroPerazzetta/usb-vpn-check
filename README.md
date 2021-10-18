@@ -24,7 +24,7 @@ Compile usbreset and make it executable:
 USB reset issued with Bus Device Path (found with lsusb) as parameter:
 
 
-`lsusb |grep Huawei'`
+`lsusb |grep 'Huawei'`
 
    which provides output:
    
