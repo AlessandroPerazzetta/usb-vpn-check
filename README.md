@@ -7,7 +7,8 @@ Conditions evaluated:
 - OK / ERROR connection (ping external IP)
 - USB device present
 - USB device reset time threshold
-- system restart threshold
+- System restart time threshold
+- System restart counter
 
 Credit to for developing usbreset program to Alan Stern: http://marc.info/?l=linux-usb&m=121459435621262&w=2
 
