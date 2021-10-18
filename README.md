@@ -1,7 +1,7 @@
 
 # USB Device and Openvpn Reset Application
 
-This script checks the connection and performs a reset of the USB device based on the search for the USB model ("Huawei"), if not present it attempts a full reboot.
+This script checks the connection and performs a reset of the USB device (ex: Huawei USB dongle, E3372,E3372H,E3275,E3276 ecc) based on the search for the USB model ("Huawei") pattern can be extended for more precise results, if not present it attempts a full reboot.
 
 Conditions evaluated:
 - OK / ERROR connection (ping external IP)
